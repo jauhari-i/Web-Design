@@ -1,46 +1,550 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway:400,500,700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script src="./js/respond.js"></script>
+  <script src="./js/caroufredsel.js"></script>
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="row" style="display: block;">
+        <a href="#" class="logo"><img src="./img/logo.png" alt="logo" /></a>
+        <nav class="menu" id="menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Our Works</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Testimonial</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </header>
+  <!-- Slider -->
+
+  <section class="slider" id="slider">
+    <ul class="slider-carousel" id="slider-carousel">
+      <li class="img1">
+        <h1>Welcome to <span class="primary">Corporate</span></h1>
+        <p>
+          It is a long established fact that a reader will be distracted by
+          the readable<br />content of a page when looking at its layout
+        </p>
+        <a href="#" class="primary-bg cta1">Get Started</a><a href="#" class="secondary-sky-blue-bg cta2">Contact Us</a>
+      </li>
+      <li class="img1">
+        <h1>We are <span class="primary">Developers</span></h1>
+        <p>
+          It is a long established fact that a reader will be distracted by
+          the readable<br />content of a page when looking at its layout
+        </p>
+        <a href="#" class="primary-bg cta1">See Our Works</a><a href="#" class="secondary-sky-blue-bg cta2">Our
+          Members</a>
+      </li>
+      <li class="img1">
+        <h1>We make <span class="primary">Awesome Themes</span></h1>
+        <p>
+          It is a long established fact that a reader will be distracted by
+          the readable<br />content of a page when looking at its layout
+        </p>
+        <a href="#" class="primary-bg cta1">Check Our Themes</a><a href="#" class="secondary-sky-blue-bg cta2">Contact
+          Us</a>
+      </li>
+    </ul>
+    <ul class="sliderpager">
+      <li>
+        <a href="#"><i class="fa fa-circle"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa fa-circle"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa fa-circle"></i></a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="services section-padding">
+    <div class="services-header">
+      <h1>Service</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nam
+        ducimus est earum exercitationem <br />
+        omnis mollitia iure excepturi facilis! Officiis facilis dolorum
+        quisquam placeat veritatis consequuntur quas sit, recusandae ipsam.
+      </p>
+    </div>
+    <div class="services-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="animation" data-animation="fadeInLeft">
+              <p><i class="fa fa-laptop"></i></p>
+              <h3>Web Design</h3>
+              <p>
+                The point of using Lorem Ipsum is that it has a more-or-less
+                normal distribution of letters, as opposed to using 'Content
+                here, content here', making it look like readable English.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="animation" data-animation="fadeInLeft">
+              <p><i class="fa fa-edit"></i></p>
+              <h3>Graphic Design</h3>
+              <p>
+                The point of using Lorem Ipsum is that it has a more-or-less
+                normal distribution of letters, as opposed to using 'Content
+                here, content here', making it look like readable English.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="animation" data-animation="fadeInLeft">
+              <p><i class="fa fa-cog"></i></p>
+              <h3>PSD to HTML/CSS</h3>
+              <p>
+                The point of using Lorem Ipsum is that it has a more-or-less
+                normal distribution of letters, as opposed to using 'Content
+                here, content here', making it look like readable English.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="animation" data-animation="fadeInLeft">
+              <p><i class="fa fa-bars"></i></p>
+              <h3>Wordpress</h3>
+              <p>
+                The point of using Lorem Ipsum is that it has a more-or-less
+                normal distribution of letters, as opposed to using 'Content
+                here, content here', making it look like readable English.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="animation" data-animation="fadeInLeft">
+              <p><i class="fa fa-leaf"></i></p>
+              <h3>Theme Development</h3>
+              <p>
+                The point of using Lorem Ipsum is that it has a more-or-less
+                normal distribution of letters, as opposed to using 'Content
+                here, content here', making it look like readable English.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="animation" data-animation="fadeInLeft">
+              <p><i class="fa fa-globe"></i></p>
+              <h3>Unlimited Support</h3>
+              <p>
+                The point of using Lorem Ipsum is that it has a more-or-less
+                normal distribution of letters, as opposed to using 'Content
+                here, content here', making it look like readable English.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio section-padding">
+    <div class="portfolio-header">
+      <h1 class="white">Our Works</h1>
+      <p>
+        It is a long established fact that a reader will be distracted by
+        the<br />
+        readable content of a page when looking at its layout
+      </p>
+    </div>
+    <div class="container">
+      <div class="row">
+        <ul class="portfolio-carousel">
+          <li>
+            <div class="inner-content">
+              <img src="img/portfolio/project1.png">
+              <div class="overlay-content">
+                <h3>Environment Website</h3>
+                <p><a href="#">Click here</a> for details</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="inner-content">
+              <img src="img/portfolio/project2.png">
+              <div class="overlay-content">
+                <h3>Ecommerce Website</h3>
+                <p><a href="#">Click here</a> for details</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="inner-content">
+              <img src="img/portfolio/project3.png">
+              <div class="overlay-content">
+                <h3>Portfolio Website</h3>
+                <p><a href="#">Click here</a> for details</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="inner-content">
+              <img src="img/portfolio/project4.png">
+              <div class="overlay-content">
+                <h3>Blog Website</h3>
+                <p><a href="#">Click here</a> for details</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="inner-content">
+              <img src="img/portfolio/project2.png">
+              <div class="overlay-content">
+                <h3>Corporate Website</h3>
+                <p><a href="#">Click here</a> for details</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="inner-content">
+              <img src="img/portfolio/project1.png">
+              <div class="overlay-content">
+                <h3>Ecommerce Website</h3>
+                <p><a href="#">Click here</a> for details</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="inner-content">
+              <img src="img/portfolio/project4.png">
+              <div class="overlay-content">
+                <h3>Retail Website</h3>
+                <p><a href="#">Click here</a> for details</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <ul class="portfolio-nav">
+        <li id="prev">&lt;</li>
+        <li id="next">&gt;</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="team section-padding">
+    <div class="team-header">
+      <h1>Our Works</h1>
+      <p>
+        It is a long established fact that a reader will be distracted by
+        the<br />
+        readable content of a page when looking at its layout
+      </p>
+    </div>
+    <div class="container">
+      <div class="row">
+        <ul class="team-carousel">
+          <li>
+            <div class="inner-content">
+              <img src="img/team/member2.png">
+              <div class="overlay-content white">
+                <p class="name primary bold">Christina</p>
+                <p class="position secondary-sky-blue bold">Web Designer</p>
+                <p class="description">The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                  of letters</p>
+                <ul class="member-social-links">
+                  <li><a href="#"><i class="fa fa-facebook"></i></a>
+                  </li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a>
+                  </li>
+                  <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="inner-content">
+              <img src="img/team/member3.png">
+              <div class="overlay-content white">
+                <p class="name primary bold">Alex</p>
+                <p class="position secondary-sky-blue bold">UI/UX Designer</p>
+                <p class="description">The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                  of letters</p>
+                <ul class="member-social-links">
+                  <li><a href="#"><i class="fa fa-facebook"></i></a>
+                  </li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a>
+                  </li>
+                  <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="inner-content">
+              <img src="img/team/member4.png">
+              <div class="overlay-content white">
+                <p class="name primary bold">John Doe</p>
+                <p class="position secondary-sky-blue bold">Web Developer</p>
+                <p class="description">The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                  of letters</p>
+                <ul class="member-social-links">
+                  <li><a href="#"><i class="fa fa-facebook"></i></a>
+                  </li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a>
+                  </li>
+                  <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="inner-content">
+              <img src="img/team/member2.png">
+              <div class="overlay-content white">
+                <p class="name primary bold">Alisha</p>
+                <p class="position secondary-sky-blue bold">Web Designer</p>
+                <p class="description">The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                  of letters</p>
+                <ul class="member-social-links">
+                  <li><a href="#"><i class="fa fa-facebook"></i></a>
+                  </li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a>
+                  </li>
+                  <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="inner-content">
+              <img src="img/team/member1.png">
+              <div class="overlay-content white">
+                <p class="name primary bold">Rob</p>
+                <p class="position secondary-sky-blue bold">Web Developer</p>
+                <p class="description">The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                  of letters</p>
+                <ul class="member-social-links">
+                  <li><a href="#"><i class="fa fa-facebook"></i></a>
+                  </li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a>
+                  </li>
+                  <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="inner-content">
+              <img src="img/team/member4.png">
+              <div class="overlay-content white">
+                <p class="name primary bold">Dennis</p>
+                <p class="position secondary-sky-blue bold">UI Designer</p>
+                <p class="description">The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                  of letters</p>
+                <ul class="member-social-links">
+                  <li><a href="#"><i class="fa fa-facebook"></i></a>
+                  </li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a>
+                  </li>
+                  <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <ul class="team-nav">
+        <li id="team-prev">&lt;</li>
+        <li id="team-next">&gt;</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="testimonials section-padding center animation" data-stellar-background-ratio="0.5"
+    data-animation="fadeInUp" id="testimonials">
+    <div class="testimonials-header">
+      <h1 class="white">Client Testimonials</h1>
+      <p>It is a long established fact that a reader will be distracted by the<br /> readable content of a page when
+        looking at its layout</p>
+    </div>
+    <ul class="testimonial-carousel">
+      <li>
+        <img src="img/team/member3.png" />
+        <p class="name">John Doe</p>
+        <p class="position">Web Designer</p>
+        <blockquote>
+          <i>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
+            using 'Content here, content here', making it look like readable English. Many desktop publishing packages
+            and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will
+            uncover many web sites still in their infancy</i>
+        </blockquote>
+      </li>
+      <li>
+        <img src="img/team/member2.png" />
+        <p class="name">Christina</p>
+        <p class="position">Web Developer</p>
+        <blockquote>
+          <i>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
+            using 'Content here, content here', making it look like readable English. Many desktop publishing packages
+            and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will
+            uncover many web sites still in their infancy.The point of using Lorem Ipsum is that it has a more-or-less
+            normal distribution of letters, as opposed to using 'Content here, content here'.</i>
+        </blockquote>
+      </li>
+      <li>
+        <img src="img/team/member4.png" />
+        <p class="name">Alex</p>
+        <p class="position">Web Designer</p>
+        <blockquote>
+          <i>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
+            using 'Content here, content here', making it look like readable English. Many desktop publishing packages
+            and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will
+            uncover many web sites still in their infancy</i>
+        </blockquote>
+      </li>
+    </ul>
+
+    <div style="text-align: center; margin-top: 20px;">
+      <ul class="testipager">
+        <li><a href="#"><i class="fa fa-circle"></i></a>
+        </li>
+        <li><a href="#"><i class="fa fa-circle"></i></a>
+        </li>
+        <li><a href="#"><i class="fa fa-circle"></i></a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section-padding blog" id="blog">
+    <div class="blog-header animation center" data-animation="fadeIn">
+      <h1>Recent Posts from Blog</h1>
+      <p>It is a long established fact that a reader will be distracted by the<br /> readable content of a page when
+        looking at its layout</p>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="animation" data-animation="fadeInLeft">
+            <img src="img/blog/post1.png" alt="post1" class="img-responsive" />
+            <h3><a href="#" class="secondary-sky-blue">Water Flowing</a></h3>
+            <p class="post-description"><i>by</i> <b><span class="primary">John</span></b> <i>on</i> <b class="date">12
+                Dec 2015</b></p>
+            <p class="post-content">The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+              letters, as opposed to using 'Content here, content here', making it look like readable English. Many
+              desktop publishing packages </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="animation" data-animation="fadeInLeft">
+            <img src="img/blog/post2.png" alt="post2" class="img-responsive" />
+            <h3><a href="#" class="secondary-sky-blue">Awesome City</a></h3>
+            <p class="post-description"><i>by</i> <b><span class="primary">Alex</span></b> <i>on</i> <b class="date">12
+                Dec 2015</b></p>
+            <p class="post-content">The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+              letters, as opposed to using 'Content here, content here', making it look like readable English. Many
+              desktop publishing packages </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="animation" data-animation="fadeInLeft">
+            <img src="img/blog/post3.png" alt="post2" class="img-responsive" />
+            <h3><a href="#" class="secondary-sky-blue">Beautiful Sky</a></h3>
+            <p class="post-description"><i>by</i> <b><span class="primary">John</span></b> <i>on</i> <b class="date">12
+                Dec 2015</b></p>
+            <p class="post-content">The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+              letters, as opposed to using 'Content here, content here', making it look like readable English. Many
+              desktop publishing packages </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer tyle="background-color: #333;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="animation" data-animation="fadeInLeft">
+            <h1>About Corporate</h1>
+            <p class="about">The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+              letters, as opposed to using 'Content here, content here', making it look like readable English</p>
+            <p><i class="fa fa-envelope"></i><span class="contact-email">corporate@email.com</span></p>
+            <p><i class="fa fa-mobile"></i><span class="contact-phone">+414 777 444</span></p>
+            <p><i class="fa fa-location-arrow"></i><span class="contact-location">69 , New York City , New York</span>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="animation" data-animation="fadeInLeft">
+            <h1>Get Blog Updates</h1>
+            <form class="update-form">
+              <fieldset>
+                <input type="text" id="take-email" placeholder="Enter your email here" />
+              </fieldset>
+              <fieldset>
+                <input type="submit" id="submit-button" value="Sign Up" />
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="animation" data-animation="fadeInLeft">
+            <h1>Stay In Touch</h1>
+            <ul class="footer-social-links">
+              <li><a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-dribbble"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright &copy;<span class="primary">Corporate</span> 2015 . All Rights Reserved.</p>
+    </div>
+  </footer #333;">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="./js/mains.js"></script>
+</body>
+
 </html>
